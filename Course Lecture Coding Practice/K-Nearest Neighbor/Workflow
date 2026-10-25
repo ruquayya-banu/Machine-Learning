@@ -1,0 +1,16 @@
+The KNN algorithm involves the following steps:-
+
+1)Calculate Distances:-
+      Compute the distance between the test data point and all other data points in the training set.
+      Select the number of nearest neighbors, K (e.g., K = 3 or K = 5), which acts as a hyperparameter for the model.
+2)Sort Distances:-
+      Sort the distances in ascending order.
+      Compute the distance between the target test data point and all other data points in the training set using a distance metric like Euclidean, Manhattan, or Minkowski distance
+3)Select Neighbors:-
+      Choose the k nearest neighbors based on the sorted distances.
+      Rank all calculated distances in ascending order and select the top K points with the shortest distance to the test sample
+4)Vote or Average:-
+    • For Classification:
+          Perform a majority vote among the K neighbors and assign the most frequent class label to the test point.
+    • For Regression: 
+          Calculate the mean (average) value of the target variable across the K neighbors to predict a continuous value
