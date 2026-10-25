@@ -1,0 +1,30 @@
+## 🛠️ Data Preprocessing Pipeline
+
+A systematic workflow to transform raw, messy datasets into clean, optimized inputs for Machine Learning models.
+
+### 🔄 The 6-Step Workflow
+
+1. **Data Splitting ✂️**
+   * Separates data into **Training** and **Test/Validation** sets first.
+   * *Purpose:* Prevents data leakage and ensures unbiased model evaluation.
+
+2. **Data Cleaning 🧹**
+   * **Missing Values:** Handled via deletion or imputation (Mean, Median, Mode, or KNN).
+   * **Outliers:** Detected using Z-Score/IQR and managed via capping or removal.
+   * **Duplicates:** Removed to eliminate redundant weights.
+
+3. **Categorical Encoding 🏷️**
+   * **One-Hot Encoding:** Converts unordered text categories (e.g., Red, Blue) into binary columns.
+   * **Ordinal Encoding:** Converts ordered text categories (e.g., Low, Medium, High) into sequential integers.
+
+4. **Feature Scaling ⚖️**
+   * **Normalization (Min-Max):** Rescales numerical values strictly between `0` and `1`.
+   * **Standardization (Z-Score):** Shifts data to have a mean of `0` and a standard deviation of `1`.
+
+5. **Feature Engineering & Selection 🧪**
+   * **Engineering:** Extracts or creates new predictive variables (e.g., extracting `Hour` from a timestamp).
+   * **Selection:** Eliminates redundant or highly correlated features to simplify the model.
+
+6. **Dimensionality Reduction 📉**
+   * Utilizes techniques like **PCA (Principal Component Analysis)**.
+   * *Purpose:* Compresses large datasets with high feature counts while preserving maximum variance.
