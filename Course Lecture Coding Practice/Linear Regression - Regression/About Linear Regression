@@ -1,0 +1,34 @@
+Equation of the Best-Fit Line:-
+For simple linear regression (with one independent variable), the best-fit line is represented by the equation
+        y = mx + b
+Where:
+y is the predicted value (dependent variable)
+x is the input (independent variable)
+m is the slope of the line (how much y changes when x changes)
+b is the intercept (the value of y when x = 0)
+
+Assumptions of the Linear Regression:-
+1. Linearity:The relationship between inputs (X) and the output (Y) is a straight line.
+2. Independence of Errors: The errors in predictions should not affect each other.
+3. Constant Variance (Homoscedasticity): The errors should have equal spread across all values of the input.
+    If the spread changes it's called heteroscedasticity and it's a problem for the model.
+4. Normality of Errors: The errors should follow a normal (bell-shaped) distribution.
+5. No Multicollinearity (for multiple regression): Input variables shouldn’t be too closely related to each other.
+6. No Autocorrelation: Errors shouldn't show repeating patterns, especially in time-based data.
+7. Additivity: The total effect on Y is just the sum of effects from each X, no mixing or interaction between them.
+
+
+Evaluation Metrics
+A variety of evaluation measures can be used to determine the strength of any linear regression model. 
+These assessment metrics often give an indication of how well the model is producing the observed outputs.
+1. Mean Squared Error (MSE): Measures the average squared difference between actual and predicted values to avoid cancellation of errors.
+2. Mean Absolute Error (MAE): Calculate the accuracy of a regression model. MAE measures the average absolute difference between the predicted values and actual values.
+3. Root Mean Squared Error (RMSE): Square root of the residuals variance is RMSE. It describes how well the observed data points match the expected values or the model's absolute fit to the data.
+4. R-Squared: Indicates how much variation the model explains. Its value is typically between 0 and 1, but it can be negative if the model performs worse than a simple baseline model (e.g., predicting the mean).
+5. Adjusted R-square: Measures the proportion of variance explained by the model while adjusting for the number of predictors and penalizing irrelevant features.
+
+
+Regularization Techniques
+1.Lasso Regression: Regularizes a linear regression model, it adds a penalty term to the linear regression objective function to prevent overfitting.
+2.Ridge regression: Adds a regularization term to the standard linear objective to prevent overfitting by penalizing large coefficient in linear regression equation. It useful when the dataset has multicollinearity where predictor variables are highly correlated.
+3.Elastic Net Regression: Hybrid regularization technique that combines the power of both L1 and L2 regularization in linear regression objective.
