@@ -1,0 +1,8 @@
+Steps in Feature Engineering
+Feature engineering can vary depending on the specific problem but the general steps are:
+
+Data Cleaning: Identify and correct errors or inconsistencies in the dataset to ensure data quality and reliability.
+Data Transformation: Transform raw data into a format suitable for modeling including scaling, normalization and encoding.
+Feature Extraction: Create new features by combining or deriving information from existing ones to provide more meaningful input to the model.
+Feature Selection: Choose the most relevant features for the model using techniques like correlation analysis, mutual information and stepwise regression.
+Feature Iteration: Continuously refine features based on model performance by adding, removing or modifying features for improvement.
