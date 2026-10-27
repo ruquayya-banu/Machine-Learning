@@ -1,5 +1,0 @@
-Decision Tree Algorithms are widely used supervised machine learning methods for both classification and regression tasks. They split data based on feature values to create a tree-like structure of decisions, starting from a root node and ending at leaf nodes that provide predictions.
-
-Decision trees are non-parametric models that can handle both numerical and categorical features without assuming any specific data distribution.
-They use splitting measures such as Information Gain, Gini Index or Variance Reduction to determine the best feature for dividing the data.
-Decision trees also act as building blocks for powerful ensemble models like Random Forest and Gradient Boosting.
