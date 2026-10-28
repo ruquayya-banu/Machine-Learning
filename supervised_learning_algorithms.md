@@ -203,7 +203,7 @@ MLP.fit(x_train, y_train)
 ```
 
 ## Installation
-
+ - Install the required libraries using pip:
 ```bash
 pip install scikit-learn xgboost
 ```
@@ -215,3 +215,7 @@ pip install scikit-learn xgboost
 - Classification predicts categorical classes.
 - Regression predicts numerical values.
 - Scale features when appropriate and tune hyperparameters to improve performance.
+- Prepare your training and testing datasets before fitting any model.
+- Some algorithms, such as SVM, KNN, and MLP, generally benefit from feature scaling.
+- Hyperparameters can be adjusted to improve model performance.
+- XGBoost requires the separate xgboost package.
