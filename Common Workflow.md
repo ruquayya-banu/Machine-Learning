@@ -7,12 +7,12 @@ Example Dataset
 
 Suppose we want to predict whether a student will pass an exam based on the number of hours studied.
 
-Study Hours (X)	Result (y)
-            1	Fail
-            2	Fail
-            5	Pass
-            7	Pass
-            8	Pass
+Study Hours (X)	Result (y)   \
+            1	Fail            \
+            2	Fail\
+            5	Pass\
+            7	Pass\
+            8	Pass\
 
 #### Important concepts:
 - Features (X): Input information used to make predictions.
@@ -29,10 +29,9 @@ d) Split — Divide the data into training and testing sets.\
 e) Create — Create the machine learning model.\
 f) Fit and Predict — Train the model and make predictions.\
 g) Evaluate — Evaluate the model's performance.\
+
 Memory Trick
-
 Import → Load → Separate → Split → Create → Fit/Predict → Evaluate
-
 Remember this common workflow first. Then learn what changes for each algorithm.
 
 # 3. Build Your First Model: Logistic Regression
@@ -172,7 +171,6 @@ python
 ```
 # 1. Import libraries
 import pandas as pd
-
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
