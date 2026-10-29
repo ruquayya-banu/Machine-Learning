@@ -63,22 +63,18 @@ Step 2: Create the Dataset
 We will create a small example dataset instead of loading a CSV file.
 
 python
+```
 df = pd.DataFrame({
-    "hours": [
-        1, 2, 3, 4, 5, 6, 7, 8, 2, 3,
-        4, 5, 6, 7, 8, 1, 3, 5, 6, 8
-    ],
-    "result": [
-        "Fail", "Fail", "Fail", "Fail", "Pass",
-        "Pass", "Pass", "Pass", "Fail", "Fail",
-        "Fail", "Pass", "Pass", "Pass", "Pass",
-        "Fail", "Fail", "Pass", "Pass", "Pass"
-    ]
+    "hours": [1, 2, 3, 4, 5, 6, 7, 8, 2, 3,
+              4, 5, 6, 7, 8, 1, 3, 5, 6, 8],
+    "result": ["Fail", "Fail", "Fail", "Fail", "Pass",
+               "Pass", "Pass", "Pass", "Fail", "Fail",
+               "Fail", "Pass", "Pass", "Pass", "Pass",
+               "Fail", "Fail", "Pass", "Pass", "Pass"]
 })
 
 print(df.head())
-
-
+```
 Explanation:
 
 hours contains the number of hours studied.
