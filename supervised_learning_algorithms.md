@@ -219,3 +219,37 @@ pip install scikit-learn xgboost
 - Some algorithms, such as SVM, KNN, and MLP, generally benefit from feature scaling.
 - Hyperparameters can be adjusted to improve model performance.
 - XGBoost requires the separate xgboost package.
+
+## Use one reusable Python template
+ - Here is a template you can reuse for many algorithms by changing only a few lines.
+```python
+# 1. Import libraries
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.ensemble import RandomForestClassifier
+
+# 2. Load data
+df = pd.read_csv("data.csv")
+
+# 3. Separate features and target
+X = df.drop("target", axis=1)
+y = df["target"]
+
+# 4. Split data
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
+# 5. Create model
+model = RandomForestClassifier(random_state=42)
+
+# 6. Train
+model.fit(X_train, y_train)
+
+# 7. Predict
+y_pred = model.predict(X_test)
+
+# 8. Evaluate
+print("Accuracy:", accuracy_score(y_test, y_pred))
+```
