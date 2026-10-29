@@ -8,11 +8,11 @@ Example Dataset
 Suppose we want to predict whether a student will pass an exam based on the number of hours studied.
 
 Study Hours (X)	Result (y)
-1	Fail
-2	Fail
-5	Pass
-7	Pass
-8	Pass
+            1	Fail
+            2	Fail
+            5	Pass
+            7	Pass
+            8	Pass
 
 Important concepts:
 
@@ -44,12 +44,13 @@ In this example, we will predict whether a student passes or fails based on stud
 
 Step 1: Import Libraries
 python
+```
 import pandas as pd
 
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
-
+```
 
 What do these libraries do?
 
@@ -81,9 +82,10 @@ result contains the student's outcome.
 df is the DataFrame containing the dataset.
 Step 3: Separate Features and Target
 python
+```
 X = df[["hours"]]
 y = df["result"]
-
+```
 
 Explanation:
 
@@ -96,6 +98,7 @@ Note: Double brackets in df[["hours"]] keep X as a DataFrame.
 
 # Step 4: Split the Dataset
 python
+```
 X_train, X_test, y_train, y_test = train_test_split(
     X,
     y,
@@ -103,7 +106,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     random_state=42,
     stratify=y
 )
-
+```
 
 Explanation:
 
@@ -116,8 +119,9 @@ random_state=42: Makes the split reproducible.
 stratify=y: Helps preserve class proportions in both sets.
 # Step 5: Create the Model
 python
+```
 model = LogisticRegression()
-
+```
 
 This creates a Logistic Regression model.
 
@@ -125,8 +129,9 @@ At this point, the model has not learned from the dataset.
 
 # Step 6: Train the Model
 python
+```
 model.fit(X_train, y_train)
-
+```
 
 The fit() method trains the model using the training features and their correct answers.
 
@@ -134,10 +139,11 @@ Remember: fit() means learn.
 
 # Step 7: Make Predictions
 python
+```
 y_pred = model.predict(X_test)
 
 print(y_pred)
-
+```
 
 The predict() method predicts the outcomes for the test examples.
 
@@ -145,10 +151,11 @@ Remember: predict() means produce predictions.
 
 # Step 8: Evaluate the Model
 python
+```
 accuracy = accuracy_score(y_test, y_pred)
 
 print("Accuracy:", accuracy)
-
+```
 
 Accuracy measures the proportion of predictions that are correct.
 
@@ -158,7 +165,7 @@ Accuracy = 4 / 5 = 0.80 = 80%
 
 The actual accuracy depends on the test data and the model's predictions.
 
-4. Complete Python Workflow
+# 4. Complete Python Workflow
 
 Here is the complete code in one place.
 
