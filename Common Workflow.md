@@ -14,22 +14,21 @@ Study Hours (X)	Result (y)
             7	Pass
             8	Pass
 
-Important concepts:
-
-Features (X): Input information used to make predictions.
-Target (y): The answer the model learns to predict.
-Training: Teaching the model using examples and their correct answers.
-Prediction: Using the trained model to predict an answer for new data.
+#### Important concepts:
+- Features (X): Input information used to make predictions.
+- Target (y): The answer the model learns to predict.
+- Training: Teaching the model using examples and their correct answers.
+- Prediction: Using the trained model to predict an answer for new data.
 # 2. Memorize These 7 Workflow Steps
 Follow these steps for most supervised learning algorithms.
 
-Import — Import the required Python libraries.
-Load — Load the dataset.
-Separate — Separate features (X) and target (y).
-Split — Divide the data into training and testing sets.
-Create — Create the machine learning model.
-Fit and Predict — Train the model and make predictions.
-Evaluate — Evaluate the model's performance.
+a) Import — Import the required Python libraries.
+b) Load — Load the dataset.
+c) Separate — Separate features (X) and target (y).
+d) Split — Divide the data into training and testing sets.
+e) Create — Create the machine learning model.
+f) Fit and Predict — Train the model and make predictions.
+g) Evaluate — Evaluate the model's performance.
 Memory Trick
 
 Import → Load → Separate → Split → Create → Fit/Predict → Evaluate
@@ -110,13 +109,13 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 Explanation:
 
-X_train: Features used to train the model.
-X_test: Features used to test the model.
-y_train: Correct answers used during training.
-y_test: Correct answers used for evaluation.
-test_size=0.2: Reserves 20% of the data for testing.
-random_state=42: Makes the split reproducible.
-stratify=y: Helps preserve class proportions in both sets.
+- X_train: Features used to train the model.
+- X_test: Features used to test the model.
+- y_train: Correct answers used during training.
+- y_test: Correct answers used for evaluation.
+- test_size=0.2: Reserves 20% of the data for testing.
+- random_state=42: Makes the split reproducible.
+- stratify=y: Helps preserve class proportions in both sets.
 # Step 5: Create the Model
 python
 ```
@@ -233,7 +232,7 @@ X	Input features
 y	Target variable
 train_test_split()	Divides data into training and testing sets
 model = LogisticRegression()	Creates the model
-model.fit()	Trains the model
+model.fit()	 Trains the model
 model.predict()	Generates predictions
 accuracy_score()	Evaluates classification accuracy
 Final Memory Trick
