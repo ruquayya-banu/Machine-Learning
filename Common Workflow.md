@@ -22,13 +22,13 @@ Study Hours (X)	Result (y)
 # 2. Memorize These 7 Workflow Steps
 Follow these steps for most supervised learning algorithms.
 
-a) Import — Import the required Python libraries.
-b) Load — Load the dataset.
-c) Separate — Separate features (X) and target (y).
-d) Split — Divide the data into training and testing sets.
-e) Create — Create the machine learning model.
-f) Fit and Predict — Train the model and make predictions.
-g) Evaluate — Evaluate the model's performance.
+a) Import — Import the required Python libraries.\
+b) Load — Load the dataset.\
+c) Separate — Separate features (X) and target (y).\
+d) Split — Divide the data into training and testing sets.\
+e) Create — Create the machine learning model.\
+f) Fit and Predict — Train the model and make predictions.\
+g) Evaluate — Evaluate the model's performance.\
 Memory Trick
 
 Import → Load → Separate → Split → Create → Fit/Predict → Evaluate
