@@ -12,7 +12,7 @@ Study Hours (X)	Result (y)   \
             2	Fail\
             5	Pass\
             7	Pass\
-            8	Pass\
+            8	Pass
 
 #### Important concepts:
 - Features (X): Input information used to make predictions.
@@ -28,10 +28,11 @@ c) Separate — Separate features (X) and target (y).\
 d) Split — Divide the data into training and testing sets.\
 e) Create — Create the machine learning model.\
 f) Fit and Predict — Train the model and make predictions.\
-g) Evaluate — Evaluate the model's performance.\
+g) Evaluate — Evaluate the model's performance.
 
-Memory Trick
-Import → Load → Separate → Split → Create → Fit/Predict → Evaluate
+Memory Trick\
+Import → Load → Separate → Split → Create → Fit/Predict → Evaluate\
+
 Remember this common workflow first. Then learn what changes for each algorithm.
 
 # 3. Build Your First Model: Logistic Regression
@@ -52,10 +53,10 @@ from sklearn.metrics import accuracy_score
 
 What do these libraries do?
 
-pandas: Creates and manages tabular data.
-train_test_split: Splits data into training and testing sets.
-LogisticRegression: Creates the classification model.
-accuracy_score: Measures the proportion of correct predictions.
+- pandas: Creates and manages tabular data.
+- train_test_split: Splits data into training and testing sets.
+- LogisticRegression: Creates the classification model.
+- accuracy_score: Measures the proportion of correct predictions.
 Step 2: Create the Dataset
 
 We will create a small example dataset instead of loading a CSV file.
