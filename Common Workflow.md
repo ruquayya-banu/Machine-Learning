@@ -1,5 +1,5 @@
 Supervised Learning Workflows — From Beginner to Confident
-1. Understand the Master Workflow
+# 1. Understand the Master Workflow
 
 Supervised learning means teaching a machine learning model using examples that already have correct answers.
 
@@ -20,8 +20,7 @@ Features (X): Input information used to make predictions.
 Target (y): The answer the model learns to predict.
 Training: Teaching the model using examples and their correct answers.
 Prediction: Using the trained model to predict an answer for new data.
-2. Memorize These 7 Workflow Steps
-
+# 2. Memorize These 7 Workflow Steps
 Follow these steps for most supervised learning algorithms.
 
 Import — Import the required Python libraries.
@@ -37,7 +36,7 @@ Import → Load → Separate → Split → Create → Fit/Predict → Evaluate
 
 Remember this common workflow first. Then learn what changes for each algorithm.
 
-3. Build Your First Model: Logistic Regression
+# 3. Build Your First Model: Logistic Regression
 
 Logistic Regression is a supervised learning algorithm commonly used for classification.
 
@@ -95,7 +94,7 @@ Memory trick: X is the question; y is the answer.
 
 Note: Double brackets in df[["hours"]] keep X as a DataFrame.
 
-Step 4: Split the Dataset
+# Step 4: Split the Dataset
 python
 X_train, X_test, y_train, y_test = train_test_split(
     X,
@@ -115,7 +114,7 @@ y_test: Correct answers used for evaluation.
 test_size=0.2: Reserves 20% of the data for testing.
 random_state=42: Makes the split reproducible.
 stratify=y: Helps preserve class proportions in both sets.
-Step 5: Create the Model
+# Step 5: Create the Model
 python
 model = LogisticRegression()
 
@@ -124,7 +123,7 @@ This creates a Logistic Regression model.
 
 At this point, the model has not learned from the dataset.
 
-Step 6: Train the Model
+# Step 6: Train the Model
 python
 model.fit(X_train, y_train)
 
@@ -133,7 +132,7 @@ The fit() method trains the model using the training features and their correct 
 
 Remember: fit() means learn.
 
-Step 7: Make Predictions
+# Step 7: Make Predictions
 python
 y_pred = model.predict(X_test)
 
@@ -144,7 +143,7 @@ The predict() method predicts the outcomes for the test examples.
 
 Remember: predict() means produce predictions.
 
-Step 8: Evaluate the Model
+# Step 8: Evaluate the Model
 python
 accuracy = accuracy_score(y_test, y_pred)
 
@@ -164,6 +163,7 @@ The actual accuracy depends on the test data and the model's predictions.
 Here is the complete code in one place.
 
 python
+```
 # 1. Import libraries
 import pandas as pd
 
@@ -216,7 +216,7 @@ new_student = pd.DataFrame({"hours": [6]})
 
 prediction = model.predict(new_student)
 print("Predicted result:", prediction[0])
-
+```
 
 Note: The workflow has seven main steps, with dataset creation shown as the loading step for this example. Predicting for a new student is an optional additional step.
 
